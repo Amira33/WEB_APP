@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="12" time="208.245">
+    <testcase classname="user should be able to register with valid data" name="user could sign up with valid data" time="29.541">
+        <system-out><![CDATA[Given user navigate to home page............................................passed
+And user click to register..................................................passed
+When user enter a valid section of first name,last name and Email...........passed
+And user enter a valid section of password and confirm password.............passed
+And user click on register button...........................................passed
+Then user should register successfully and success msg is appeared..........passed
+And user logout.............................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user should be able to login to the system" name="user is able to login with valid username and password" time="15.06">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+Then user could login successfully and go to home page......................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user should be able to login to the system" name="user login with invalid username and password" time="13.663">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter invalid Email and password...................................passed
+When user click on login button.............................................passed
+Then user couldn't login successfully and error msg is displayed............passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to search for any product in advanced search" name="user could search for product using the name" time="15.893">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+And user click to search....................................................passed
+When user search with the name of the product...............................passed
+Then user is able to find what lookig for...................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to search for any product in advanced search" name="user could search for product using the Categories list search" time="15.904">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+When user search using the categories for example Jewelry...................passed
+Then user is able to find what lookig for from categories...................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to add the product to shopping cart" name="user is able to add the product to shopping cart" time="16.619">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+Given user has an empty shopping cart.......................................passed
+And user search with the name of the product................................passed
+When user click the add to cart button to add the product to shopping cart..passed
+Then The shopping cart is displayed the item added..........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to add the product to wishlist" name="user is able to add the product to wishlist" time="15.978">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+Given user has an empty wishlist............................................passed
+And user search with the name of the product................................passed
+When user click the add the product to wishlist.............................passed
+Then The wishlist is displayed the item added...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to add the product to compare list" name="user is able to add the product to compare list" time="20.745">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+When user click on login button.............................................passed
+And user search with the name of the product................................passed
+When user click the add the product to compare list.........................passed
+Then The compare list is displayed the item added...........................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to switch currencies" name="user is able to switch currencies using US" time="16.099">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user enter valid Email and password.....................................passed
+And user click on login button..............................................passed
+When user click the switch currencies.......................................passed
+Then Different currencies appears choosen US................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user able to switch currencies" name="user is able to switch currencies using Euro" time="14.594">
+        <system-out><![CDATA[When user click the switch currencies.......................................passed
+And user choosed Euro.......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user could reset password" name="user forget password" time="15.121">
+        <system-out><![CDATA[Given user navigate to login page...........................................passed
+And user click on Forgot password button....................................passed
+When Password recovery page opened..........................................passed
+And ask user to enter yor email address.....................................passed
+And click on recover button.................................................passed
+Then msg recovery sent......................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="user should be able to make a successful order" name="user could doing a successful order" time="18.37">
+        <system-out><![CDATA[And user navigate to login page.............................................passed
+And user enter valid Email and password.....................................passed
+And user click on login button..............................................passed
+And user could login successfully and go to home page.......................passed
+And user search with the name of the product................................passed
+And user is able to find what lookig for....................................passed
+And user click the add to cart button to add the product to shopping cart...passed
+And The shopping cart is displayed the item added...........................passed
+When user agree with the terms of service...................................passed
+Then user could doing checkout..............................................passed
+]]></system-out>
+    </testcase>
+</testsuite>
